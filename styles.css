@@ -1,5 +1,5 @@
 :root{
-  --hue: 155;             /* drag the on-screen slider to retint the background */
+  --hue: 155;             /* forest-green tint */
   --bg:hsl(var(--hue) 44% 8%);
   --panel:hsl(var(--hue) 44% 10%);
   --line:hsl(var(--hue) 43% 19%);
@@ -100,7 +100,7 @@ header{
 .card:hover .more::after{transform:translateX(4px)}
 .card .thumb{
   border-left:1px solid var(--line);
-  background:var(--thumb-bg);position:relative;overflow:hidden;height:230px;align-self:start;
+  background:var(--thumb-bg);position:relative;overflow:hidden;aspect-ratio:1/1;align-self:start;
 }
 .card .thumb img{width:100%;height:100%;object-fit:cover;display:block;
   filter:saturate(.9);transition:transform .4s,filter .3s}
@@ -155,9 +155,29 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
   .about-grid{grid-template-columns:1fr;gap:36px}
 }
 
+/* ---- experience ---- */
+.experience{border-top:1px solid var(--line);padding:72px 0}
+.experience .eyebrow-a{font-family:"IBM Plex Mono",monospace;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+.experience h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:700;letter-spacing:-.02em;line-height:1.1;margin-bottom:8px}
+.tl-group{margin-top:40px}
+.tl-group:first-of-type{margin-top:48px}
+.tl-label{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--dim);padding-bottom:10px;border-bottom:1px solid var(--line)}
+.tl-item{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:26px 0;border-bottom:1px solid var(--line)}
+.tl-date{font-family:"IBM Plex Mono",monospace;font-size:.78rem;color:var(--accent-soft);letter-spacing:.03em}
+.tl-date .place{display:block;color:var(--dim);margin-top:6px;font-size:.72rem}
+.tl-body h3{font-size:1.15rem;font-weight:700;letter-spacing:-.01em;margin-bottom:4px}
+.tl-body .role{display:block;color:var(--muted);font-family:"IBM Plex Mono",monospace;font-size:.76rem;margin-bottom:12px}
+.tl-body ul{margin:0;padding-left:18px;color:var(--muted);font-size:.94rem;display:flex;flex-direction:column;gap:7px;max-width:64ch}
+.tl-body ul li strong{color:var(--ink);font-weight:500}
+.tl-body ul li a{color:var(--accent-soft);border-bottom:1px solid var(--tagyear-line)}
+.tl-body ul li a:hover{color:var(--ink)}
+@media(max-width:700px){
+  .tl-item{grid-template-columns:1fr;gap:8px}
+}
+
 @media(max-width:820px){
   .card{grid-template-columns:44px 1fr}
-  .card .thumb{grid-column:1 / -1;border-left:none;border-top:1px solid var(--line);height:200px}
+  .card .thumb{grid-column:1 / -1;border-left:none;border-top:1px solid var(--line);aspect-ratio:1/1;height:auto}
   .card .idx{padding-top:24px}
 }
 
@@ -188,36 +208,4 @@ footer{border-top:1px solid var(--line);padding:48px 0 60px;color:var(--muted)}
 @media(max-width:820px){
   .media-grid{grid-template-columns:1fr}
   .gallery{grid-template-columns:1fr 1fr}
-}
-
-/* ---- hue slider ---- */
-.hue-slider-wrap{
-  position:fixed;top:50%;right:18px;transform:translateY(-50%);z-index:200;
-  display:flex;flex-direction:column;align-items:center;gap:12px;
-  padding:16px 10px;border:1px solid var(--line);border-radius:24px;
-  background:hsl(var(--hue) 44% 10% / .78);backdrop-filter:blur(6px);
-}
-.hue-slider-wrap .lbl{
-  writing-mode:vertical-rl;font-family:"IBM Plex Mono",monospace;
-  font-size:.6rem;letter-spacing:.16em;color:var(--dim);user-select:none;
-}
-.hue-slider-track{width:26px;height:150px;display:flex;align-items:center;justify-content:center}
-.hue-slider{
-  appearance:none;-webkit-appearance:none;width:150px;height:6px;margin:0;
-  border-radius:3px;outline:none;cursor:pointer;transform:rotate(-90deg);
-  background:linear-gradient(90deg,#ff0000,#ffbf00,#80ff00,#00ffbf,#0080ff,#8000ff,#ff00bf,#ff0000);
-}
-.hue-slider::-webkit-slider-thumb{
-  -webkit-appearance:none;width:18px;height:18px;border-radius:50%;
-  background:var(--ink);border:2px solid var(--bg);box-shadow:0 0 0 1px var(--line-bright);cursor:pointer;
-}
-.hue-slider::-moz-range-thumb{
-  width:18px;height:18px;border-radius:50%;background:var(--ink);
-  border:2px solid var(--bg);box-shadow:0 0 0 1px var(--line-bright);cursor:pointer;
-}
-.hue-slider::-moz-range-track{background:transparent}
-@media(max-width:640px){
-  .hue-slider-wrap{right:8px;padding:12px 6px;gap:8px}
-  .hue-slider-track{height:110px}
-  .hue-slider{width:110px}
 }
