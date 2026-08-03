@@ -1,0 +1,9 @@
+# Raw source media (unprocessed originals) — optimized versions live in img/
+*.heic
+*.mp4
+*.avi
+20240327_120042.jpg
+Capture d'écran 2026-04-23 161852(1).png
+Capture d'écran 2026-04-23 162031(1).png
+
+__pycache__/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>try{var __h=localStorage.getItem('bgHue');if(__h)document.documentElement.style.setProperty('--hue',__h);}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LED Panel — Yannis Palmero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="hue-slider-wrap">
+  <span class="lbl">HUE</span>
+  <div class="hue-slider-track"><input type="range" class="hue-slider" min="0" max="360" step="1" value="155" aria-label="Background hue"></div>
+</div>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="dot"></span>YANNIS&nbsp;PALMERO</a>
+    <nav class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="p-hero">
+  <div class="wrap">
+    <div class="eyebrow" style="text-align:center">Personal project · 2021</div>
+    <h1>LED panel</h1>
+  </div>
+</section>
+
+<section class="p-section">
+  <div class="wrap">
+    <p>I'm into photography and videography, but the gear can get expensive fast. So I used some LEDs and an old power supply to build a DIY LED panel for shooting video.</p>
+
+    <div class="media-grid single" style="margin-top:32px">
+      <div class="media-box"><img src="img/led-comparison.jpg" alt="Lighting comparison: DIY LED panel vs iPhone flashlight"></div>
+    </div>
+
+    <div class="media-grid">
+      <div class="media-box"><img src="img/led.jpg" alt="DIY LED panel, top view"></div>
+      <div class="media-box"><img src="img/led-power.jpg" alt="LED panel power supply and dimmer"></div>
+    </div>
+
+    <a class="back-link" href="index.html#projects">Back to projects</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="mono" style="color:var(--dim)">© 2026 Yannis Palmero — engineering &amp; prototyping</div>
+    <div class="mono" style="color:var(--dim)">Rebuilt portfolio</div>
+  </div>
+</footer>
+<script src="theme.js"></script>
+</body>
+</html>

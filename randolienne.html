@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>try{var __h=localStorage.getItem('bgHue');if(__h)document.documentElement.style.setProperty('--hue',__h);}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Randolienne — Yannis Palmero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="hue-slider-wrap">
+  <span class="lbl">HUE</span>
+  <div class="hue-slider-track"><input type="range" class="hue-slider" min="0" max="360" step="1" value="155" aria-label="Background hue"></div>
+</div>
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="dot"></span>YANNIS&nbsp;PALMERO</a>
+    <nav class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="p-hero">
+  <div class="wrap">
+    <div class="eyebrow" style="text-align:center">School project · 2024</div>
+    <h1>Randolienne</h1>
+  </div>
+</section>
+
+<section class="p-section">
+  <div class="wrap">
+    <p>The Randolienne is a compact, toolless Savonius wind turbine designed for hikers to charge mobile phones on remote treks by mounting directly onto a standard hiking pole. To optimize aerodynamic efficiency and stability under heavy wind loads, we developed a fixed-pole architecture featuring three curved trapezoidal blades made of paraglider fabric, supported by a three-wire guy-line anchoring system.</p>
+    <p>To convert wind capture into usable electrical energy, we engineered a custom 3D-printed gear train with a 9.375:1 multiplier ratio to accelerate the rotor up to the generator's 1500 rpm threshold. Validated through wind tunnel testing, the finalized 1.190 kg prototype initiates rotation at 3 m/s, delivers a steady 5V phone-charging output at 6 m/s, and withstands winds up to 12 m/s — all with a toolless setup time of just 8 minutes.</p>
+    <div class="p-specsheet mono">
+      <div><div class="k">Weight</div><div class="v">1.190 kg</div></div>
+      <div><div class="k">Cut-in speed</div><div class="v">3 m/s</div></div>
+      <div><div class="k">Rated output</div><div class="v">5V @ 6 m/s</div></div>
+      <div><div class="k">Max wind</div><div class="v">12 m/s</div></div>
+      <div><div class="k">Gear ratio</div><div class="v">9.375:1</div></div>
+      <div><div class="k">Setup time</div><div class="v">8 min, no tools</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="p-section">
+  <div class="wrap">
+    <h2>Demonstration</h2>
+    <p>Here you can see the Randolienne in action, and follow the wind speed on the anemometer.</p>
+    <div class="media-grid single">
+      <div class="media-box">
+        <div class="video-wrap"><iframe src="https://www.youtube.com/embed/fKssiwFyYQk" title="Randolienne demonstration" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="p-section">
+  <div class="wrap">
+    <h2>Assembly</h2>
+    <p>A fast assembly (and disassembly) system that uses a hiking stick as the main axis, foldable wings and lightweight 3D-printed components.</p>
+    <div class="media-grid">
+      <div class="media-box">
+        <div class="video-wrap"><iframe src="https://www.youtube.com/embed/GHkVoarxGoQ" title="Randolienne assembly" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="media-cap wrap" style="padding:10px 12px 0">Assembly</div>
+      </div>
+      <div class="media-box">
+        <div class="video-wrap"><iframe src="https://www.youtube.com/embed/lcqH-sZBZ6Y" title="Randolienne disassembly" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="media-cap wrap" style="padding:10px 12px 0">Disassembly</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="p-section">
+  <div class="wrap">
+    <h2>Gallerie photos</h2>
+    <p>CAD renders of the gear train and generator housing.</p>
+    <div class="gallery">
+      <div class="media-box"><img src="img/randolienne-cad-1.jpg" alt="Randolienne CAD render — full turbine"></div>
+      <div class="media-box"><img src="img/randolienne-cad-2.jpg" alt="Randolienne CAD render — gearbox"></div>
+      <div class="media-box"><img src="img/randolienne-cad-3.jpg" alt="Randolienne CAD render — gearbox, alternate angle"></div>
+    </div>
+    <a class="back-link" href="index.html#projects">Back to projects</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div class="mono" style="color:var(--dim)">© 2026 Yannis Palmero — engineering &amp; prototyping</div>
+    <div class="mono" style="color:var(--dim)">Rebuilt portfolio</div>
+  </div>
+</footer>
+<script src="theme.js"></script>
+</body>
+</html>
