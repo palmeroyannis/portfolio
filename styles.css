@@ -29,9 +29,13 @@ body{
     radial-gradient(circle, hsl(335 70% 50% / .22), transparent 70%),
     radial-gradient(circle, hsl(var(--hue) 70% 45% / .26), transparent 70%),
     radial-gradient(circle, hsl(335 65% 50% / .18), transparent 70%),
-    radial-gradient(circle, hsl(var(--hue) 75% 40% / .30), transparent 70%);
-  background-repeat:repeat,repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
-  background-size:40px 40px,40px 40px,900px 900px,760px 760px,820px 820px,700px 700px,860px 860px;
+    radial-gradient(circle, hsl(var(--hue) 75% 40% / .30), transparent 70%),
+    radial-gradient(circle, hsl(335 68% 50% / .20), transparent 70%),
+    radial-gradient(circle, hsl(var(--hue) 72% 42% / .24), transparent 70%),
+    radial-gradient(circle, hsl(335 62% 48% / .16), transparent 70%),
+    radial-gradient(circle, hsl(var(--hue) 78% 40% / .28), transparent 70%);
+  background-repeat:repeat,repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat,no-repeat;
+  background-size:40px 40px,40px 40px,900px 900px,760px 760px,820px 820px,700px 700px,860px 860px,780px 780px,840px 840px,720px 720px,800px 800px;
   background-position:
     0 var(--parallax-y, 0px),
     0 var(--parallax-y, 0px),
@@ -39,7 +43,11 @@ body{
     -8% calc(170vh + var(--parallax-y, 0px)),
     90% calc(330vh + var(--parallax-y, 0px)),
     5% calc(480vh + var(--parallax-y, 0px)),
-    75% calc(640vh + var(--parallax-y, 0px));
+    75% calc(640vh + var(--parallax-y, 0px)),
+    25% calc(70vh + var(--parallax-y, 0px)),
+    45% calc(250vh + var(--parallax-y, 0px)),
+    70% calc(410vh + var(--parallax-y, 0px)),
+    10% calc(560vh + var(--parallax-y, 0px));
 }
 a{color:inherit;text-decoration:none}
 .mono{font-family:"IBM Plex Mono",monospace}

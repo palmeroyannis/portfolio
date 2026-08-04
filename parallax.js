@@ -2,7 +2,7 @@
   var KEY = 'parallaxFactor';
   var saved = null;
   try{ saved = localStorage.getItem(KEY); }catch(e){}
-  var factor = saved !== null ? parseFloat(saved) : 0.4;
+  var factor = saved !== null ? parseFloat(saved) : 0.95;
 
   var slider = document.getElementById('parallax-factor');
   var readout = document.getElementById('parallax-val');
@@ -36,4 +36,14 @@
 
   window.addEventListener('scroll', onScroll, {passive:true});
   update();
+
+  // Halve the wheel-scroll speed on desktop (leave touch scrolling untouched).
+  var isCoarsePointer = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+  if(!isCoarsePointer){
+    var SCROLL_SPEED = 0.5;
+    window.addEventListener('wheel', function(e){
+      e.preventDefault();
+      window.scrollBy(0, e.deltaY * SCROLL_SPEED);
+    }, {passive:false});
+  }
 })();
