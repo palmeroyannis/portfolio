@@ -24,9 +24,16 @@ body{
   -webkit-font-smoothing:antialiased;
   background-image:
     linear-gradient(var(--grid) 1px,transparent 1px),
-    linear-gradient(90deg,var(--grid) 1px,transparent 1px);
-  background-size:40px 40px;
-  background-position:0 var(--parallax-y, 0px);
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px),
+    radial-gradient(circle, hsl(var(--hue) 75% 40% / .35), transparent 70%),
+    radial-gradient(circle, hsl(335 70% 50% / .22), transparent 70%);
+  background-repeat:repeat,repeat,no-repeat,no-repeat;
+  background-size:40px 40px,40px 40px,900px 900px,760px 760px;
+  background-position:
+    0 var(--parallax-y, 0px),
+    0 var(--parallax-y, 0px),
+    68% calc(-12% + var(--parallax-y, 0px)),
+    -8% calc(170vh + var(--parallax-y, 0px));
 }
 a{color:inherit;text-decoration:none}
 .mono{font-family:"IBM Plex Mono",monospace}
