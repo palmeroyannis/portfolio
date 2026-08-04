@@ -9,11 +9,11 @@
   --dim:hsl(var(--hue) 28% 42%);
   --thumb-bg:hsl(var(--hue) 44% 7%);
   --tagyear-line:hsl(var(--hue) 64% 24%);
-  --accent:#2dd28d;      /* emerald accent — retuned to match the green palette */
-  --accent-soft:#88ddba;
+  --accent:#e9498c;      /* rose — complementary to the green background (hue 335 vs 155) */
+  --accent-soft:#ed97bb;
   --grid: hsl(var(--hue) 44% 30% / .22);
 }
-*{box-sizing:border-box;margin:0;padding:0;cursor:url('benchy-cursor.svg') 6 4, auto}
+*{box-sizing:border-box;margin:0;padding:0;cursor:url('benchy-cursor.svg') 22 4, auto}
 html{scroll-behavior:smooth}
 body{
   background:var(--bg);

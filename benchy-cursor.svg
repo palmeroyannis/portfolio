@@ -1,17 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 64 64">
   <!-- hull -->
-  <path d="M3 21 L28 21 L30 24 Q30 27 26 27 L7 27 Q3 27 3 24 Z" fill="#e8eef2" stroke="#0b1d16" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M6 36 Q6 31 11 30 L18 30 L18 34 L54 34 Q59 34 57 39 L52 48 Q50 52 44 52 L21 52 Q15 52 11 48 L6 42 Q4 39 6 36 Z"
+        fill="#e8eef2" stroke="#0b1d16" stroke-width="1.6" stroke-linejoin="round"/>
   <!-- deck line -->
-  <line x1="5" y1="21" x2="28" y2="21" stroke="#0b1d16" stroke-width="1"/>
+  <path d="M18 34 L54 34" stroke="#0b1d16" stroke-width="1.2" fill="none"/>
+  <!-- bow porthole -->
+  <circle cx="13" cy="41" r="3.2" fill="none" stroke="#0b1d16" stroke-width="1.4"/>
+  <!-- stern bollard -->
+  <rect x="46" y="30" width="3.4" height="6" rx="1.2" fill="#2dd28d" stroke="#0b1d16" stroke-width="1.1"/>
   <!-- cabin -->
-  <rect x="12" y="13" width="9" height="8" rx="0.5" fill="#2dd28d" stroke="#0b1d16" stroke-width="1.2"/>
-  <!-- portholes -->
-  <circle cx="15" cy="17" r="1.1" fill="#0b1d16"/>
-  <circle cx="18.5" cy="17" r="1.1" fill="#0b1d16"/>
+  <path d="M19 34 L19 20 Q27.5 14.5 37 20 L37 34 Z" fill="#2dd28d" stroke="#0b1d16" stroke-width="1.6" stroke-linejoin="round"/>
+  <!-- window -->
+  <rect x="21.3" y="22.5" width="6.4" height="6.4" fill="#0b1d16"/>
+  <line x1="24.5" y1="22.5" x2="24.5" y2="28.9" stroke="#e8eef2" stroke-width="0.9"/>
+  <line x1="21.3" y1="25.7" x2="27.7" y2="25.7" stroke="#e8eef2" stroke-width="0.9"/>
+  <!-- door -->
+  <path d="M30 34 L30 25.8 Q30 22.8 32.9 22.8 Q35.8 22.8 35.8 25.8 L35.8 34 Z" fill="#0b1d16" stroke="#e8eef2" stroke-width="0.6"/>
   <!-- funnel -->
-  <rect x="22" y="9" width="3.4" height="12" fill="#2dd28d" stroke="#0b1d16" stroke-width="1.2"/>
-  <!-- mast -->
-  <line x1="7" y1="21" x2="7" y2="6" stroke="#0b1d16" stroke-width="1.3" stroke-linecap="round"/>
-  <!-- flag -->
-  <path d="M7 6 L13 8.4 L7 10.8 Z" fill="#2dd28d" stroke="#0b1d16" stroke-width="0.6" stroke-linejoin="round"/>
+  <rect x="26.5" y="6" width="6" height="13" fill="#2dd28d" stroke="#0b1d16" stroke-width="1.5"/>
+  <ellipse cx="29.5" cy="6" rx="3.4" ry="1.6" fill="#0b1d16"/>
 </svg>
