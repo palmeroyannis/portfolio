@@ -74,11 +74,16 @@ header{
 
 /* ---- hero ---- */
 .hero{padding:96px 0 72px}
+.hero-inner{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
+.hero-text{min-width:0}
 .hero-portrait{
-  display:block;margin:36px auto;
-  width:min(480px, 100%);height:auto;
+  width:320px;height:auto;flex:0 0 auto;
   border:1px solid var(--line);
   filter:grayscale(1);
+}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-portrait{width:min(320px, 100%);margin:0 auto}
 }
 .eyebrow{font-size:.78rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
 .hero h1{
