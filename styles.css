@@ -77,11 +77,11 @@ header{
 .hero-inner{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
 .hero-text{min-width:0}
 .hero-portrait{
-  width:320px;height:auto;flex:0 0 auto;
+  width:clamp(200px, 26vw, 320px);height:auto;flex:0 0 auto;
   border:1px solid var(--line);
   filter:grayscale(1);
 }
-@media(max-width:900px){
+@media(max-width:640px){
   .hero-inner{grid-template-columns:1fr}
   .hero-portrait{width:min(320px, 100%);margin:0 auto}
 }
